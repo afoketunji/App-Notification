@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App Notification</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="app_notification.css" />
+        <script type="text/javascript" language="javascript" src="app_notification.js"></script>
+    </head>
+
+    <body style="background:#f8f8f8;">
+        <script>
+
+        (function () {
+
+            var userAgent = window.navigator.userAgent.toLowerCase(),
+                isIphone = userAgent.indexOf("iphone") > -1,
+                isIpad = userAgent.indexOf("ipad") > -1,
+                deviceName = isIpad ? "iPad" : "iPhone";
+
+            if (isIpad || isIphone) {
+
+                AppNotification.settings({
+                    icon: "images/thumb_placeholder.png",
+                    text: "Download our awesome <strong>" + deviceName + " App</strong> and enjoy the best music experience on Mobile.",
+                    link: "https://apple.com/"
+                });
+            }
+
+        })();
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+﻿#AppNotification {
+    position: fixed;
+    padding: 10px;
+    width: 320px;
+    font-family: Helvetica, Verdana, Arial;
+    opacity: 1;
+    z-index: 99999;
+    background-color: #ccc;
+    background-image: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+}
+
+img {
+    border-radius: 6px;
+}
+
+#AppNotification-close,
+#AppNotification-icon,
+#AppNotification-text,
+#AppNotification-button {
+    float: left;
+}
+
+#AppNotification-close {
+    width: 20px;
+    height: 20px;
+    margin: -3px 10px 0 3px;
+}
+
+#AppNotification-icon {
+    width: 70px;
+    height: 70px;
+    margin-left: -5px;
+}
+
+#AppNotification-text {
+    margin: 0 10px 0 5px;
+    width: 120px;
+    font-size: 12px;
+    color: #4d4d4d;
+}
+
+#AppNotification-button {
+    display: block;
+    width: 90px;
+    margin: -56px 0 0 222px;
+    font-size: 12px;
+    color: #6a6a6a;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #fff;
+    text-shadow: 0 1px 1px #fff;
+    background-color: #ccc;
+    background-image: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+}
+
+#AppNotification.hidden {
+    opacity: 0;
+    /*margin-bottom: 150px;*/
+}
